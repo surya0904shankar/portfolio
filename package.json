@@ -2,7 +2,7 @@
   "name": "profile-website",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://surya0904shankar.github.io/profile-website",
+  "homepage": "https://surya0904shankar.github.io/profile",
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
     "@testing-library/jest-dom": "^5.17.0",
