@@ -23,19 +23,19 @@ function App() {
         
         <div className="social-links">
           <a href="https://github.com/surya0904shankar" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/github.svg" alt="GitHub" />
+            <img src={`${process.env.PUBLIC_URL}/icons/github.svg`} alt="GitHub" />
           </a>
           <a href="https://www.linkedin.com/in/s-surya-310ba5206" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/linkedin.svg" alt="LinkedIn" />
+            <img src={`${process.env.PUBLIC_URL}/icons/linkedin.svg`} alt="LinkedIn" />
           </a>
           <a href="https://leetcode.com/u/Surya0904/" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/leetcode.svg" alt="LeetCode" />
+            <img src={`${process.env.PUBLIC_URL}/icons/leetcode.svg`} alt="LeetCode" />
           </a>
           <a href="https://www.hackerrank.com/profile/suryas0904" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/hackerrank.svg" alt="HackerRank" />
+            <img src={`${process.env.PUBLIC_URL}/icons/hackerrank.svg`} alt="HackerRank" />
           </a>
           <a href="https://www.geeksforgeeks.org/user/suryaswa8d/" target="_blank" rel="noopener noreferrer">
-            <img src="/icons/geeksforgeeks.svg" alt="GeeksforGeeks" />
+            <img src={`${process.env.PUBLIC_URL}/icons/geeksforgeeks.svg`} alt="GeeksforGeeks" />
           </a>
         </div>
 

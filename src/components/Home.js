@@ -2,19 +2,19 @@ import React from 'react';
 
 function Home() {
   const skills = [
-    { name: 'HTML', logo: '/assets/skills/html5.png' },
-    { name: 'CSS', logo: '/assets/skills/css3.png' },
-    { name: 'JavaScript', logo: '/assets/skills/javascript.png' },
-    { name: 'TypeScript', logo: '/assets/skills/typescript.png' },
-    { name: 'React', logo: '/assets/skills/react.png' },
-    { name: 'Node.js', logo: '/assets/skills/nodejs.png' },
-    { name: 'Java', logo: '/assets/skills/java.png' },
-    { name: 'Spring', logo: '/assets/skills/spring.png' },
-    { name: 'C++', logo: '/assets/skills/cpp.png' },
-    { name: 'Python', logo: '/assets/skills/python.png' },
-    { name: 'Git', logo: '/assets/skills/git.png' },
-    { name: 'SQL', logo: '/assets/skills/sql.png' },
-    { name: 'REST API', logo: '/assets/skills/api.png' }
+    { name: 'HTML', logo: `${process.env.PUBLIC_URL}/assets/skills/html5.png` },
+    { name: 'CSS', logo: `${process.env.PUBLIC_URL}/assets/skills/css3.png` },
+    { name: 'JavaScript', logo: `${process.env.PUBLIC_URL}/assets/skills/javascript.png` },
+    { name: 'TypeScript', logo: `${process.env.PUBLIC_URL}/assets/skills/typescript.png` },
+    { name: 'React', logo: `${process.env.PUBLIC_URL}/assets/skills/react.png` },
+    { name: 'Node.js', logo: `${process.env.PUBLIC_URL}/assets/skills/nodejs.png` },
+    { name: 'Java', logo: `${process.env.PUBLIC_URL}/assets/skills/java.png` },
+    { name: 'Spring', logo: `${process.env.PUBLIC_URL}/assets/skills/spring.png` },
+    { name: 'C++', logo: `${process.env.PUBLIC_URL}/assets/skills/cpp.png` },
+    { name: 'Python', logo: `${process.env.PUBLIC_URL}/assets/skills/python.png` },
+    { name: 'Git', logo: `${process.env.PUBLIC_URL}/assets/skills/git.png` },
+    { name: 'SQL', logo: `${process.env.PUBLIC_URL}/assets/skills/sql.png` },
+    { name: 'REST API', logo: `${process.env.PUBLIC_URL}/assets/skills/api.png` }
   ];
 
   return (
@@ -32,7 +32,7 @@ function Home() {
           </div>
           <div className="profile-image-container">
             <img 
-              src="/assets/WhatsApp Image 2025-04-13 at 12.06.45 PM.jpeg" 
+              src={`${process.env.PUBLIC_URL}/assets/WhatsApp Image 2025-04-13 at 12.06.45 PM.jpeg`}
               alt="Profile Photo" 
               className="profile-image"
             />

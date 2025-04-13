@@ -8,55 +8,55 @@ function Certificates() {
       id: 1,
       title: "Web Development Bootcamp",
       description: "Comprehensive web development course covering HTML, CSS, JavaScript, React, and Node.js",
-      image: "/assets/certificates/WhatsApp Image 2025-04-12 at 10.02.16 PM.jpeg"
+      image: `${process.env.PUBLIC_URL}/assets/certificates/WhatsApp Image 2025-04-12 at 10.02.16 PM.jpeg`
     },
     {
       id: 2,
       title: "Data Structures and Algorithms",
       description: "Advanced course on data structures and algorithms with practical implementations",
-      image: "/assets/certificates/WhatsApp Image 2025-04-12 at 9.58.44 PM.jpeg"
+      image: `${process.env.PUBLIC_URL}/assets/certificates/WhatsApp Image 2025-04-12 at 9.58.44 PM.jpeg`
     },
     {
       id: 3,
       title: "AWS Certified Cloud Practitioner",
       description: "Fundamental understanding of AWS Cloud concepts, services, security, architecture, pricing, and support",
-      image: "/assets/certificates/WhatsApp Image 2025-04-12 at 9.57.18 PM (1).jpeg"
+      image: `${process.env.PUBLIC_URL}/assets/certificates/WhatsApp Image 2025-04-12 at 9.57.18 PM (1).jpeg`
     },
     {
       id: 4,
       title: "Python for Data Science",
       description: "Data analysis and visualization using Python, Pandas, NumPy, and Matplotlib",
-      image: "/assets/certificates/WhatsApp Image 2025-04-12 at 9.57.18 PM.jpeg"
+      image: `${process.env.PUBLIC_URL}/assets/certificates/WhatsApp Image 2025-04-12 at 9.57.18 PM.jpeg`
     },
     {
       id: 5,
       title: "Machine Learning Fundamentals",
       description: "Introduction to machine learning algorithms, neural networks, and deep learning",
-      image: "/assets/certificates/WhatsApp Image 2025-04-12 at 9.57.17 PM (1).jpeg"
+      image: `${process.env.PUBLIC_URL}/assets/certificates/WhatsApp Image 2025-04-12 at 9.57.17 PM (1).jpeg`
     },
     {
       id: 6,
       title: "DevOps Engineering",
       description: "CI/CD pipelines, containerization with Docker, and orchestration with Kubernetes",
-      image: "/assets/certificates/WhatsApp Image 2025-04-12 at 9.57.17 PM.jpeg"
+      image: `${process.env.PUBLIC_URL}/assets/certificates/WhatsApp Image 2025-04-12 at 9.57.17 PM.jpeg`
     },
     {
       id: 7,
       title: "Cybersecurity Essentials",
       description: "Network security, cryptography, and ethical hacking fundamentals",
-      image: "/assets/certificates/WhatsApp Image 2025-04-12 at 9.57.16 PM.jpeg"
+      image: `${process.env.PUBLIC_URL}/assets/certificates/WhatsApp Image 2025-04-12 at 9.57.16 PM.jpeg`
     },
     {
       id: 8,
       title: "Mobile App Development",
       description: "Cross-platform mobile development using React Native and Flutter",
-      image: "/assets/certificates/WhatsApp Image 2025-04-12 at 9.57.15 PM (1).jpeg"
+      image: `${process.env.PUBLIC_URL}/assets/certificates/WhatsApp Image 2025-04-12 at 9.57.15 PM (1).jpeg`
     },
     {
       id: 9,
       title: "Database Management",
       description: "SQL, NoSQL databases, and database design principles",
-      image: "/assets/certificates/WhatsApp Image 2025-04-12 at 9.57.15 PM.jpeg"
+      image: `${process.env.PUBLIC_URL}/assets/certificates/WhatsApp Image 2025-04-12 at 9.57.15 PM.jpeg`
     }
   ];
 
