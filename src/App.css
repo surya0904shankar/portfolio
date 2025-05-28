@@ -130,8 +130,10 @@ body {
   flex: 0 0 300px;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
   margin: 2rem;
+  min-height: 300px;
 }
 
 .profile-image {
@@ -150,6 +152,8 @@ body {
   transition: all 0.5s ease;
   position: relative;
   z-index: 1;
+  display: block;
+  margin: 0 auto;
 }
 
 .profile-image:hover {
