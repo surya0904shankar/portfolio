@@ -32,7 +32,7 @@ function Home() {
           </div>
           <div className="profile-image-container">
             <img 
-             src={`${process.env.PUBLIC_URL}/assets/profile-photo.jpg`}
+             src={`${process.env.PUBLIC_URL}/assets/profile-photo.jpeg`}
               alt="Profile Photo" 
               className="profile-image"
             />
