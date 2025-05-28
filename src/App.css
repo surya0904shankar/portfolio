@@ -144,15 +144,10 @@ body {
   transition: all 0.5s ease;
   position: relative;
   z-index: 1;
-  filter: hue-rotate(0deg);
 }
 
 .profile-image:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 30px rgba(255, 215, 0, 0.5);
-  border-color: #FFD700;
-  filter: hue-rotate(180deg);
-  animation: hueRotate 3s infinite linear;
 }
 
 .profile-image-container::before {
@@ -167,14 +162,18 @@ body {
   opacity: 0;
   transition: all 0.5s ease;
   z-index: 0;
+  background: linear-gradient(45deg, #ff0000, #0000ff);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
   animation: borderGlow 2s infinite alternate;
 }
 
 .profile-image-container:hover::before {
   opacity: 1;
   transform: scale(1.1);
-  border-color: #00ff00;
-  box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
 }
 
 .profile-content {
@@ -197,31 +196,25 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, #ff0000, #0000ff);
+  border: 2px solid transparent;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #ff0000, #0000ff) border-box;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) padding-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
   opacity: 0;
   transition: opacity 0.5s ease;
-  z-index: -1;
+  z-index: 0;
 }
 
 .profile-content:hover::before {
-  opacity: 0.1;
+  opacity: 1;
 }
 
 .profile-content:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-@keyframes hueRotate {
-  0% {
-    filter: hue-rotate(0deg);
-  }
-  50% {
-    filter: hue-rotate(180deg);
-  }
-  100% {
-    filter: hue-rotate(360deg);
-  }
 }
 
 @keyframes borderGlow {
@@ -237,6 +230,30 @@ body {
     border-color: #ff0000;
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
   }
+}
+
+.profile-image-container::after {
+  content: 'Full Stack Developer';
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #FFD700;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 1rem;
+  white-space: nowrap;
+  opacity: 0;
+  transition: all 0.5s ease;
+  border: 1px solid #FFD700;
+}
+
+.profile-image-container:hover::after {
+  opacity: 1;
+  bottom: -50px;
+  border-color: #00ff00;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
 }
 
 .profile-content h1 {
