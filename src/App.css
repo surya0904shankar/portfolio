@@ -159,29 +159,11 @@ body {
 }
 
 .profile-image-container::before {
-  content: '';
-  position: absolute;
-  top: -12px;
-  left: -12px;
-  right: -12px;
-  bottom: -12px;
-  border: 3px solid transparent;
-  border-radius: 50%;
-  opacity: 0;
-  transition: all 0.5s ease;
-  z-index: 0;
-  background: linear-gradient(45deg, #ff0000, #0000ff) border-box;
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
-    linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  animation: borderGlow 2s infinite alternate;
+  display: none;
 }
 
 .profile-image-container:hover::before {
-  opacity: 1;
-  transform: scale(1.1);
+  display: none;
 }
 
 .profile-content {
