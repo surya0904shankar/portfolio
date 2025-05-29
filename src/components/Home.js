@@ -32,7 +32,7 @@ function Home() {
           </div>
           <div className="profile-image-container">
             <img 
-              src={`${process.env.PUBLIC_URL}/assets/profile-photo.jpg`}
+              src={`${process.env.PUBLIC_URL}/assets/WhatsApp Image 2025-04-13 at 12.06.45 PM.jpeg`}
               alt="Profile Photo" 
               className="profile-image"
             />
