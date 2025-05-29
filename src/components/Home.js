@@ -1,4 +1,5 @@
 import React from 'react';
+import profilePhoto from '../assets/profile-photo.jpg';
 
 function Home() {
   const skills = [
@@ -32,7 +33,7 @@ function Home() {
           </div>
           <div className="profile-image-container">
             <img 
-              src={`${process.env.PUBLIC_URL}/assets/profile-photo.jpg`}
+              src={profilePhoto}
               alt="Profile Photo" 
               className="profile-image"
             />
