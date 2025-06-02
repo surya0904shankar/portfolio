@@ -165,17 +165,24 @@ body {
 }
 
 .profile-content {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
-  background-color: rgba(17, 34, 64, 0.7);
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 3rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(255, 215, 0, 0.2);
+  border: 1px solid transparent;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  border: 3px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 200px);
+  padding: 2rem;
+  margin-top: 1rem;
 }
 
 .profile-content::before {
@@ -185,17 +192,23 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  border: 3px solid transparent;
-  border-radius: 10px;
-  background: linear-gradient(45deg, #ff0000, #0000ff) border-box;
-
+  border-radius: 8px;
+  padding: 3px;
+  background: linear-gradient(45deg, #FFD700, #FF0000, #0000FF, #FFD700);
+  background-size: 300% 300%;
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
   opacity: 0;
-  transition: opacity 0.5s ease;
-  z-index: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
 }
 
 .profile-content:hover::before {
   opacity: 1;
+  animation: gradientBorder 3s ease infinite;
 }
 
 .profile-content:hover {
